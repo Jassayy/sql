@@ -1,11 +1,8 @@
--- to convey which db we wanna use  
-USE sql_store;
+SELECT first_name , last_name , phone , points , points + 10 AS 'some modifying in data', (points + 10) * 100 AS 'discount price'           
+-- we can even use arithmetic operators and modify however we want
+-- using AS keyword and then specify the column name for that particular data
+-- if we wanna have space in that col name we must pass it inside ''
+FROM customers ;
 
--- select statement 
--- we use select statement to select columns based on col names
--- if we want to select all we use *
-SELECT *
-FROM customers 
--- WHERE customer_id = 1 
-ORDER BY last_name;  -- order by is used for sorting based on the column name provided  
--- from (table_name) WHERE (condition)
+
+
