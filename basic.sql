@@ -1,6 +1,3 @@
--- get customers whose addresses contain trail or avenue phone nubers end with 9
-
-SELECT *
-FROM customers
--- WHERE address LIKE '%trail%' OR address LIKE '%avenue%';
-WHERE phone LIKE '%9';
+-- is null to get null values
+select * from customers -- where phone is null;
+where phone is not null; -- ignore null rows
