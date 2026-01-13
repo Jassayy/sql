@@ -1,6 +1,3 @@
--- excercise 2
--- get orders placed this year (2017)
-
 SELECT * 
-FROM orders
-WHERE order_date >= '2019-01-01';
+FROM customers 
+WHERE birth_date > '1990-01-01' AND points > 2000; -- and clause is used for writing multiple conditions
